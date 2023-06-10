@@ -6,7 +6,10 @@ const db = new Sequelize({
     username: 'root',
     password: '',
     database: 'database_ums',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    define: {
+        timestamps: false
+    }
 });
 
 // Establish The Connection
