@@ -3,7 +3,7 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">id</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
@@ -18,9 +18,9 @@
       <td>{{this.email}}</td>
       <td>{{this.phone}}</td>
       <td>
-        <a href="#" class="btn btn-primary">View</a>
-        <a href="#" class="btn btn-success">Edit</a>
-        <a href="#" class="btn btn-danger">Delete</a>
+        <a href="/view/{{this.id}}" class="btn btn-primary">View</a>
+        <a href="/edit/{{this.id}}" class="btn btn-success">Edit</a>
+        <a href="/delete/{{this.id}}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
     {{/each}}

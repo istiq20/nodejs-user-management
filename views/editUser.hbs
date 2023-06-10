@@ -1,0 +1,17 @@
+<h1>Edit User</h1>
+<a href="/" class="btn btn-success mb-3">&larr;- Back to home</a>
+<form action="/update/{{user.id}}" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" name="name" value="{{user.name}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">email</label>
+    <input type="email" name="email" value="{{user.email}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">phone</label>
+    <input type="text" name="phone" value="{{user.phone}}" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary mt-2">Update User</button>
+</form>
